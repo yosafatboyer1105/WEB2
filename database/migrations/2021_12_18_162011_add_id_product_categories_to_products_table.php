@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddIdProductCategoriesToProductTable extends Migration
+class AddIdProductCategoriesToProductsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddIdProductCategoriesToProductTable extends Migration
      */
     public function up()
     {
-        Schema::table('product', function (Blueprint $table) {
-            //
+        Schema::table('products', function (Blueprint $table) {
+            $table->unsignedBigInteger('id_product_categories')->nullable();
         });
     }
 
@@ -25,7 +25,7 @@ class AddIdProductCategoriesToProductTable extends Migration
      */
     public function down()
     {
-        Schema::table('product', function (Blueprint $table) {
+        Schema::table('products', function (Blueprint $table) {
             //
         });
     }
