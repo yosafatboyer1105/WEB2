@@ -1,0 +1,31 @@
+.fas{
+    color: black;
+}
+
+body{
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card p {
+    margin-top: -10px;
+    margin-bottom: 1px;
+}
+
+.row .card:hover{
+    box-shadow: 3px 3px 3px greenyellow;
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
