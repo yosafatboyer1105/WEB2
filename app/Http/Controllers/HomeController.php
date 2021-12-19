@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\User;
-
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -17,11 +17,13 @@ class HomeController extends Controller
         }
 
         else{
+            // taroh modul buat nampilin produk ke user page nya disini.
             return view('clients.landing');
         }
     }
 
-    public function index(){
+    public function index(){ // method yang return view landing page
         return view('welcome');
     }
+
 }

@@ -35,7 +35,7 @@ Route::get('pants',[App\Http\Controllers\PantsController::class, 'pantsView'])->
 
 
 // route login & redirect
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function (){
     return view('dashboard');
 })->name('dashboard');
 
